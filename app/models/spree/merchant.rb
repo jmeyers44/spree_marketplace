@@ -30,6 +30,8 @@ class Spree::Merchant < Spree::Base
   validates :email,                  presence: true, email: true, uniqueness: true
   validates :name,                   presence: true, uniqueness: true
   validates :url,                    format: { with: URI.regexp(%w[http https]), allow_blank: true }
+  validates :stripe_publishable_key,   presence: true
+  validates :stripe_user_id,   presence: true
 
   #==========================================
   # Callbacks
