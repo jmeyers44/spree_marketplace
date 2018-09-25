@@ -16,6 +16,7 @@ class Spree::Merchant < Spree::Base
   # end
   #has_many   :products, through: :variants
   has_many   :products
+  has_many   :orders
   #has_many   :stock_locations
   #has_many   :shipments, through: :stock_locations
   #has_many   :supplier_variants
