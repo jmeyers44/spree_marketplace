@@ -33,6 +33,8 @@ class Spree::Merchant < Spree::Base
   validates :url,                    format: { with: URI.regexp(%w[http https]), allow_blank: true }
   validates :stripe_publishable_key,   presence: true
   validates :stripe_user_id,   presence: true
+  validates :store_state,   presence: true
+  validates :operating_hours,   presence: true
 
   #==========================================
   # Callbacks
