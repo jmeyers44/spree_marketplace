@@ -34,7 +34,7 @@ class Spree::Merchant < Spree::Base
   validates :stripe_publishable_key,   presence: true
   validates :stripe_user_id,   presence: true
   validates :store_state,   presence: true
-  validates :operating_hours,   presence: true
+  # validates :operating_hours,   presence: true
 
   #==========================================
   # Callbacks
